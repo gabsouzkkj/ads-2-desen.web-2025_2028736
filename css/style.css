@@ -41,6 +41,11 @@ body {
 #rodape {
     text-align: center;
     background-color: #e2e3d8;
-    padding: 9px;
+    padding: 2px;
     
+}
+
+.imagem_largura {
+  width: 100%;
+  height: 100%;
 }
