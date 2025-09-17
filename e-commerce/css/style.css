@@ -1,20 +1,20 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .concordia-header {
-    background-color: #060607;
+    background-color: #313130;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px 40px 0;
 }
 
 .header-main {
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center;
     margin-bottom: 20px;
 }
@@ -44,7 +44,7 @@ body {
 .search-button {
     background: transparent;
     border: none;
-    cursor: pointer;
+    cursor: none;
     color: white;
 }
 
@@ -75,24 +75,24 @@ body {
 }
 
 .primary-btn {
-    background-color: gray;
+    background-color: #a3020d;
     color: #fff;
     font-weight: bold;
 }
 
 .primary-btn:hover {
-    background-color: rgb(80, 80, 80);
+    background-color: #ca020f;
 }
 
 .cart-btn {
-    background-color: gray;
+    background-color: #a3020d;
     color: #fff;
     font-size: 20px;
     padding: 10px;
 }
 
 .cart-btn:hover {
-    background-color: rgb(80, 80, 80);;
+    background-color: #ca020f;
 }
 
 .header-nav {
@@ -105,7 +105,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -119,10 +119,14 @@ body {
     text-align: center;
     padding: 10px 5px;
     transition: color 0.3s;
+    margin: 0 10px 0 15px;  
 }
 
 .header-nav li a:hover {
-    color: gray;
+    color: white;
+    background-color: #a3020d;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .header-nav li a i {
