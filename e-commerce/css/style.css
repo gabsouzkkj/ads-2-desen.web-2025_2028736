@@ -1,0 +1,137 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.concordia-header {
+    background-color: #060607;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px 0;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-container {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 40px;
+}
+
+.search-container input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.action-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.action-btn i {
+    font-size: 18px;
+}
+
+.action-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.primary-btn {
+    background-color: gray;
+    color: #fff;
+    font-weight: bold;
+}
+
+.primary-btn:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.cart-btn {
+    background-color: gray;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.cart-btn:hover {
+    background-color: rgb(80, 80, 80);;
+}
+
+.header-nav {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 5px;
+    transition: color 0.3s;
+}
+
+.header-nav li a:hover {
+    color: gray;
+}
+
+.header-nav li a i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.header-nav li a .fa-chevron-down {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #999;
+}
