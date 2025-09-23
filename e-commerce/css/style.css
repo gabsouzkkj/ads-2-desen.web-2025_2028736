@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-.concordia-header {
+.header {
     background-color: #313130;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px 40px 0;
@@ -95,9 +95,40 @@ body {
     background-color: #ca020f;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 700px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.header-nav .dropdown-content a {
+    color: #000;
+}
+
+.header-nav li:hover .dropdown-content {
+    display: block;
+}
+
 .header-nav {
     border-top: 1px solid #eee;
     padding-top: 15px;
+    
 }
 
 .header-nav ul {
@@ -114,17 +145,18 @@ body {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: white;
     font-size: 14px;
     text-align: center;
     padding: 10px 5px;
     transition: color 0.3s;
-    margin: 0 10px 0 15px;  
+    margin: 0 10px 0 15px;
+    color: rgb(255, 255, 255);
 }
 
 .header-nav li a:hover {
-    color: white;
-    background-color: #a3020d;
+    color: #a3020d;
+    font-weight: 700;
+    /* background-color: #a3020d; */
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -138,4 +170,172 @@ body {
     font-size: 12px;
     margin-top: 5px;
     color: #999;
+}
+
+.main-content {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.produto-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.produto-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.produto-link {
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.detalhes-produto {
+    padding: 15px;
+}
+
+.nome-produto {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+    min-height: 40px;
+}
+
+.antigopreco-produto {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+    margin: 0;
+}
+
+.preco-produto {
+    font-size: 20px;
+    font-weight: 700;
+    color: #a3020d;
+    margin: 5px 0;
+}
+
+.juros-produto {
+    font-size: 13px;
+    color: #555;
+    margin: 0;
+}
+
+.footer {
+    background-color: #313130;
+    color: #f0f0f0;
+    padding: 40px 20px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 2.2;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #a3020d;
+}
+
+.footer {
+    border-top: 1px solid #444;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #888;
+    margin: 0;
+}
+
+.header-nav ul li .dropdown-content a span {
+    font-size: 12px;
+    color: #555;
+    display: block;
+    margin-top: 4px;
 }
