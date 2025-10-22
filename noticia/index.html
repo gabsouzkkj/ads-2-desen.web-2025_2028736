@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CNN Brasil - Notícias Ao vivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="cabecalho-principal">
+        <a href="#" class="logotipo">
+          <img src="./images/CNN.png" />
+        </a>
+        <div class="container-busca">
+          <input type="text" placeholder="Pesquisar na CNN Brasil." />
+          <button type="submit" class="botao-busca">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="acoes-usuario">
+          <a href="#" class="botao-acao botao-secundario">
+            <i class="fas fa-sign-in-alt"></i> Entrar
+          </a>
+        </div>
+      </div>
+      <nav class="navegacao-cabecalho">
+        <ul>
+          <li>
+            <a href="#" class="link-navegacao ao-vivo"
+              ><i class="fas fa-broadcast-tower"></i> Ao vivo</a
+            >
+          </li>
+          <li>
+            <a href="#" class="link-navegacao esporte"
+              ><i class="fas fa-football-ball"></i> Esporte</a
+            >
+          </li>
+          <li>
+            <a href="#" class="link-navegacao economia"
+              ><i class="fas fa-chart-line"></i> Economia</a
+            >
+          </li>
+          <li>
+            <a href="#" class="link-navegacao politica"
+              ><i class="fas fa-landmark"></i> Política</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="conteudo-principal">
+      <div class="colunas-noticias">
+        <section class="coluna-noticia destaque">
+          <h2 class="titulo-coluna">DESTAQUE</h2>
+          <div class="cartao-noticia cartao-grande">
+            <img src="./images/economia.jpg" class="imagem-noticia" />
+            <div class="detalhes-noticia">
+              <p class="rotulo-categoria fundo-destaque">URGENTE</p>
+              <h3 class="titulo-noticia">
+                Nova Medida Econômica Pega Mercados de Surpresa com Forte
+                Impacto.
+              </h3>
+              <p class="resumo-noticia">
+                Analistas preveem consequências a longo prazo após a aprovação
+                do pacote fiscal.
+              </p>
+              <a href="#" class="ler-mais">Leia mais »</a>
+            </div>
+          </div>
+          <div class="cartao-noticia">
+            <img src="./images/camara.jpg" class="imagem-noticia" />
+            <div class="detalhes-noticia">
+              <p class="rotulo-categoria fundo-politica">Política</p>
+              <h3 class="titulo-noticia">
+                Câmara Vota Projeto de Lei Controversa sobre Regulamentação.
+              </h3>
+              <p class="resumo-noticia">
+                Debate acalorado entre partidos da base e oposição.
+              </p>
+              <a href="#" class="ler-mais">Leia mais »</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="coluna-noticia esporte">
+          <h2 class="titulo-coluna">ESPORTE</h2>
+          <div class="cartao-noticia">
+            <img src="./images/futebol.png" class="imagem-noticia" />
+            <div class="detalhes-noticia">
+              <p class="rotulo-categoria fundo-esporte">Futebol</p>
+              <h3 class="titulo-noticia">
+                Time da Casa Vence Clássico com Gol nos Acréscimos.
+              </h3>
+              <p class="resumo-noticia">
+                Atuação impecável do goleiro garante os três pontos fora de
+                casa.
+              </p>
+              <a href="#" class="ler-mais">Leia mais »</a>
+            </div>
+          </div>
+          <div class="cartao-noticia">
+            <img src="./images/natacao.jpg" class="imagem-noticia" />
+            <div class="detalhes-noticia">
+              <p class="rotulo-categoria fundo-esporte">Olímpiadas</p>
+              <h3 class="titulo-noticia">
+                Atleta Brasileiro Bate Recorde Mundial em Prova de Natação.
+              </h3>
+              <p class="resumo-noticia">
+                Ouro garantido e vaga nas próximas olimpíadas confirmada.
+              </p>
+              <a href="#" class="ler-mais">Leia mais »</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="coluna-noticia tecnologia">
+          <h2 class="titulo-coluna">TECNOLOGIA</h2>
+          <div class="cartao-noticia">
+            <img
+              src="./images/ia.jpg"
+              alt="Notícia de Inteligência Artificial"
+              class="imagem-noticia"
+            />
+            <div class="detalhes-noticia">
+              <p class="rotulo-categoria fundo-tecnologia">IA</p>
+              <h3 class="titulo-noticia">
+                Inteligência Artificial Lança Novo Modelo de Geração de Imagens.
+              </h3>
+              <p class="resumo-noticia">
+                Ferramenta promete revolucionar o mercado de design e arte
+                digital.
+              </p>
+              <a href="#" class="ler-mais">Leia mais »</a>
+            </div>
+          </div>
+          <div class="cartao-noticia">
+            <img src="./images/camara.jpg" class="imagem-noticia" />
+            <div class="detalhes-noticia">
+              <p class="rotulo-categoria fundo-tecnologia">Espaço</p>
+              <h3 class="titulo-noticia">
+                Descoberto Novo Exoplaneta com Potencial de Vida.
+              </h3>
+              <p class="resumo-noticia">
+                Telescópio James Webb envia imagens inéditas do novo mundo.
+              </p>
+              <a href="#" class="ler-mais">Leia mais »</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <div class="container-rodape">
+        <a href="#" class="logotipo" style="margin-top: 25px">
+          <img src="./images/CNN.png" />
+        </a>
+        <div class="secao-rodape sobre">
+          <h3>Sobre o CNN Notícias</h3>
+          <p>
+            O CNN Notícias é o seu ponto de referência para informações
+            atualizadas, precisas e relevantes sobre o Brasil e o mundo.
+          </p>
+        </div>
+        <div class="secao-rodape links-uteis">
+          <h3>Editorias</h3>
+          <ul>
+            <li><a href="#">Ao Vivo</a></li>
+            <li><a href="#">Esporte</a></li>
+            <li><a href="#">Economia</a></li>
+            <li><a href="#">Política</a></li>
+          </ul>
+        </div>
+        <div class="secao-rodape social">
+          <h3>Siga-nos</h3>
+          <div class="icones-sociais">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="secao-rodape contato">
+          <h3>Fale Conosco</h3>
+          <p>E-mail: cnn@cnn.com</p>
+          <p>Canal TV: 557</p>
+        </div>
+      </div>
+      <div class="rodape-inferior">
+        <p>© 2025 CNN Notícias. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
